@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import DisplayResult from './Components/displayResult';
-// import InputFieldsMetric from './Components/InputFieldsMetric';
+import InputFieldsMetric from './Components/InputFieldsMetric';
 import { Container, Header, Input, Grid, Segment } from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css';
 
@@ -31,18 +31,14 @@ class App extends Component {
   render() {
     return (
       <Container>
-      {/* <InputFieldsMetric 
-       weight={this.state.weight}
-       height={this.state.height}
-       />
-     */}
+  
       <div>
-
-    
+     
+  
       <Header as='h1'>BMI Converter</Header>
         <div>
           <h4>
-            <span><a class="metric" href="#" onClick={this.showMetric}>Metric</a> </span>&nbsp;&nbsp;|&nbsp;&nbsp;<span><a class ="imperial" href="#" onClick={this.showImperial}> Imperial</a> </span>
+            <span><a class="metric" href="#" onClick={this.showMetric}>Metric</a> </span>&nbsp;&nbsp;|&nbsp;&nbsp;<span><a class ="imperial" onClick={this.showImperial}> Imperial</a> </span>
           </h4>
         </div>
         <div id="bmi_metric">
